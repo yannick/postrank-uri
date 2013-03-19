@@ -140,7 +140,7 @@ module PostRank
       opts[:raw] ? uri : uri.to_s
     end
 
-    def hash(uri, opts = {})
+    def md5(uri, opts = {})
       Digest::MD5.hexdigest(opts[:clean] == true ? clean(uri) : uri)
     end
 

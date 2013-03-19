@@ -185,9 +185,9 @@ describe PostRank::URI do
     end
   end
 
-  context "hash" do
+  context "md5" do
     def h(uri, opts = {})
-      PostRank::URI.hash(uri, opts)
+      PostRank::URI.md5(uri, opts)
     end
 
     it "should compute the MD5 hash without cleaning the URI" do
